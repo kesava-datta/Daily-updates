@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main() 
 {
-    int a[5],i,sum=0;
+    int a[5],i;
+    long long sum=0;
     for(i=0;i<5;i++) 
     {
         scanf("%d",&a[i]);
@@ -20,8 +21,8 @@ int main()
             max=a[i];
         }
     }
-    int min_sum=sum-max;
-    int max_sum=sum-min;
-    printf("%d %d", min_sum, max_sum);
+    long long min_sum=sum-max;
+    long long max_sum=sum-min;
+    printf("%lld %lld", min_sum, max_sum);
     return 0;
 }
